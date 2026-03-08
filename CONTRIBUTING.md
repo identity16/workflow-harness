@@ -30,8 +30,25 @@ bun install
 
 - Write TypeScript
 - Follow existing code style and conventions
-- Add tests for new functionality
+- Add tests for new functionality (using TDD)
 - Keep PRs focused — one concern per PR
+
+### TDD (Test-Driven Development)
+
+All new features and bug fixes **must be developed using TDD.**
+
+1. **Red** — Write a failing test first. Tests always come before implementation code.
+2. **Green** — Write the minimal code to make the test pass. Do not over-implement.
+3. **Refactor** — Clean up code while keeping all tests green.
+
+#### Rules
+
+- Use `bun test` as the test runner.
+- Test files use `*.test.ts` or `*.spec.ts` extensions.
+- Co-locate test files with the source files they test.
+- Run `bun test` and ensure all tests pass before committing.
+- Never commit feature code without accompanying tests.
+- When fixing a bug, write a test that reproduces it before applying the fix.
 
 ## Commit Messages
 

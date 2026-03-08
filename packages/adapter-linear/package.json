@@ -1,0 +1,16 @@
+{
+  "name": "@workflow-harness/adapter-linear",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@linear/sdk": "^37.0.0"
+  },
+  "devDependencies": {
+    "@workflow-harness/core": "workspace:*"
+  },
+  "scripts": {
+    "test": "bun test"
+  }
+}
